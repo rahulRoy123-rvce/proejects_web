@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Cards from './pages/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="font-bold text-center text-4xl my-8">
+        Explore our projects
+      </div>
+      <p className="mx-36 text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      </p>
+      <h1 className="justify-start ml-60 text-3xl font-bold">Biochar Projects</h1>
+      <Cards/>
+      <Footer/>
+     
     </div>
   );
 }
