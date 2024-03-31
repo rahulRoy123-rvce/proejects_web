@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="font-bold text-center text-4xl my-8">
-        Explore our projects
+      <div className="font-extrabold text-center text-4xl my-8">
+        Explore our projects!
       </div>
-      <p className="mx-36 text-center">
+      <p className="mx-36 text-center my-8">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
       </p>

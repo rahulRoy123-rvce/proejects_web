@@ -18,10 +18,23 @@ const Footer = () => {
               <img src={logo} alt="DeCarbonn Logo" className="h-8" />
               <span className="font-bold text-xl">DeCarbonn</span>
             </a>
-            <p className="mb-4">Have any query?</p>
+            <div className="flex flex-col">
+              <div>
+              <p className="mb-4">Have any query?</p>
+              </div>
+            
             <div className="flex space-x-2">
               <input type="text" placeholder="write your query here..." className="p-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white" />
               <button className="bg-white text-green-700 px-4 rounded-r-md">Send</button>
+            
+          </div>
+            </div>
+            <div className="flex space-x-4 mb-6 md:mb-0 my-4">
+            <a href="#" className="hover:text-gray-300"><Instagram/></a>
+            <a href="#" className="hover:text-gray-300"><Whatsapp/></a>
+            <a href="#" className="hover:text-gray-300"><Facebook/></a>
+            {/* Replace XingIcon with the correct icon or SVG */}
+            <a href="#" className="hover:text-gray-300"><X/></a>
             </div>
           </div>
 
@@ -46,21 +59,15 @@ const Footer = () => {
           </div>
 
           {/* Social icons */}
-          <div className="flex space-x-4 mb-6 md:mb-0">
-            <a href="#" className="hover:text-gray-300"><Instagram/></a>
-            <a href="#" className="hover:text-gray-300"><Whatsapp/></a>
-            <a href="#" className="hover:text-gray-300"><Facebook/></a>
-            {/* Replace XingIcon with the correct icon or SVG */}
-            <a href="#" className="hover:text-gray-300"><X/></a>
-          </div>
+         
         </div>
 
         {/* Divider */}
         <div className="border-t border-white border-opacity-25 my-6"></div>
 
         {/* Bottom section */}
-        <div className="flex justify-between items-center">
-          <p>Made with  at Maiti Labs</p>
+        <div className="flex flex-col items-center">
+          <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
           <p>Copyright © 2024 DeCarbonn</p>
         </div>
       </div>
