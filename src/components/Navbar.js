@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#133009]">
+    <nav className="sticky top-0 z-50 bg-[#133009]"> {/* Add sticky and top-0 classes here */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* logo */}
@@ -24,7 +24,6 @@ const Navbar = () => {
 
           {/* primary nav */}
           <div className="hidden md:flex items-center flex-row ml- space-x-10">
-            
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Home</a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Carbon Calculator</a>
             <a href="#" className=" flex flex-row py-5 px-3 text-white hover:text-gray-300">Projects<Arrow/></a>
