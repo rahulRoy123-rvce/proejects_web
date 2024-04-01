@@ -1,9 +1,15 @@
-
-import React from 'react';
-import logo from '../Assets/logo.png'
-import Arrow from '../Ui/Arrow';
+import React, { useState } from 'react';
+import logo from '../Assets/logo.png';
+import Arrow from '../Ui/Arrow.js'
+import Search from '../Ui/Search.js';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="bg-[#133009]">
       <div className="max-w-6xl mx-auto px-4">
@@ -11,19 +17,20 @@ const Navbar = () => {
           {/* logo */}
           <div className="flex items-center">
             <a href="#" className="flex items-center space-x-2 text-white">
-              {/* Assuming logo.svg is your logo path */}
               <img src={logo} alt="Logo" className="h-12 mr-3" />
-              <span className="font-bold">DeCarbonn</span>
+              <span className="font-bold text-3xl">DeCarbonn</span>
             </a>
           </div>
 
           {/* primary nav */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center flex-row ml- space-x-10">
+            
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Home</a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Carbon Calculator</a>
-            <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Projects</a>
+            <a href="#" className=" flex flex-row py-5 px-3 text-white hover:text-gray-300">Projects<Arrow/></a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">About</a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Team</a>
+            <Search/>
           </div>
 
           {/* secondary nav */}
@@ -35,7 +42,7 @@ const Navbar = () => {
 
           {/* mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button className="mobile-menu-button text-white hover:text-gray-300">
+            <button className="mobile-menu-button text-white hover:text-gray-300" onClick={toggleMobileMenu}>
               <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
@@ -45,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {/* mobile menu */}
-      <div className="mobile-menu hidden md:hidden">
+      <div className={`mobile-menu md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <a href="#" className="block py-2 px-4 text-sm text-white">Home</a>
         <a href="#" className="block py-2 px-4 text-sm text-white">Carbon Calculator</a>
         <a href="#" className="block py-2 px-4 text-sm text-white">Projects</a>

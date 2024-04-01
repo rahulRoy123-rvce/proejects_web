@@ -1,17 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const Arrow = () => {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_11_131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-<rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_11_131)">
-<path d="M22 8L12 18L2 8L3.775 6.225L12 14.45L20.225 6.225L22 8Z" fill="white"/>
-</g>
-</svg>
+    <svg className="mx-1" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_11_131" style={{ maskType: 'alpha' }} x="0" y="0" width="24" height="24">
+        <rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="#D9D9D9" />
+      </mask>
+      <g mask="url(#mask0_11_131)">
+        <path d="M22 8L12 18L2 8L3.775 6.225L12 14.45L20.225 6.225L22 8Z" fill="white" />
+      </g>
+    </svg>
+  );
+};
 
-  )
-}
-
-export default Arrow
+export default Arrow;

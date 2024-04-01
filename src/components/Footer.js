@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="flex flex-col items-center">
           <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
-          <p>Copyright © 2024 DeCarbonn</p>
+          <p>Copyright © 2024 <strong>DeCarbonn</strong></p>
         </div>
       </div>
     </footer>
