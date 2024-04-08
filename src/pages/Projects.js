@@ -8,21 +8,17 @@ import {
   Button,
 } from '@material-tailwind/react';
 
-
-
-
 const Cards = ({ cardData }) => {
-  
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center px-16 my-8">
       {cardData.map((card) => (
-        <div key={card.id} className="p-4">
-          <Card className="mt-6 w-full sm:w-96 md:w-80 lg:w-96 xl:w-96 2xl:w-96 mx-auto">
-            <CardHeader color="blue-gray" className="relative h-56">
+        <div key={card.id} className="mb-6">
+          <Card className="w-full">
+            <CardHeader color="blue-gray" className="relative pb-[60%] mt-2"> {/* Set padding-bottom to control aspect ratio */}
               <img
                 src={card.image}
                 alt="card-image"
-                className="w-full h-full object-cover"
+                className="absolute w-full h-full object-cover top-0" // Added absolute positioning
               />
             </CardHeader>
             <CardBody>

@@ -9,7 +9,7 @@ import X from '../Ui/X';
 const Footer = () => {
   return (
     <footer className="bg-[#133009] text-white">
-      <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="max-w-6xl mx-auto  py-10">
         <div className="flex flex-wrap justify-between items-center">
           {/* Logo and query section */}
           <div className="mb-6 w-full md:w-auto md:mb-0">
@@ -23,9 +23,9 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="write your query here..."
-                  className="p-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white"
+                  className="p-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white"
                 />
-                <button className="bg-white text-green-700 px-4 rounded-r-md">Send</button>
+                <button className="bg-white text-green-700 px-4 rounded-md font-bold">Send</button>
               </div>
             </div>
             <div className="flex space-x-4 mb-6 md:mb-0 my-4">
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white border-opacity-25 my-6"></div>
+        {/* <div className="border-t border-white border-opacity-25 my-6"></div> */}
 
         {/* Bottom section */}
         <div className="flex flex-col items-center">

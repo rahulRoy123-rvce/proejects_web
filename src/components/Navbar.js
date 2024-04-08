@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#133009]"> {/* Add sticky and top-0 classes here */}
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-6xl mx-auto ">
+        <div className="flex h-16">
           {/* logo */}
-          <div className="flex items-center">
+          <div className="flex basis-1/2 items-center">
             <a href="#" className="flex items-center space-x-2 text-white">
               <img src={logo} alt="Logo" className="h-12 mr-3" />
               <span className="font-bold text-3xl">DeCarbonn</span>
@@ -23,13 +23,13 @@ const Navbar = () => {
           </div>
 
           {/* primary nav */}
-          <div className="hidden md:flex items-center flex-row ml- space-x-10">
+          <div className="hidden basis-1/2 justify-end md:flex items-center flex-row ">
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Home</a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Carbon Calculator</a>
             <a href="#" className=" flex flex-row py-5 px-3 text-white hover:text-gray-300">Projects<Arrow/></a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">About</a>
             <a href="#" className="py-5 px-3 text-white hover:text-gray-300">Team</a>
-            <Search/>
+            <div className=""><Search/></div>
           </div>
 
           {/* secondary nav */}

@@ -5,7 +5,8 @@ import Cards from './pages/Projects';
 import Footer from './components/Footer';
 import India from '../src/Assets/india.png';
 import Africa from '../src/Assets/africa.png';
-
+import Navbar1 from './components/Navbar1';
+import Cards1 from './components/Cards1';
 const cardData = [
   {
     id: 1,
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      {/* <Navbar1/> */}
       <div className="font-extrabold text-center text-4xl my-8">
         Explore our projects!
       </div>
@@ -36,9 +38,10 @@ function App() {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
       </p>
-      <h1 className="justify-start text-center text-3xl font-bold my-2">Biochar Projects</h1>
-      <Cards cardData={cardData} />
-
+      <h1 className="justify-start mx-16 text-3xl font-bold my-2">Biochar Projects</h1>
+      <Cards className="" cardData={cardData} />
+      {/* <Cards1/> */}
+      
       <Footer/>
      
     </div>
